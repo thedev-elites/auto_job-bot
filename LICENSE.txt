@@ -1,0 +1,9 @@
+Here's a professional paragraph for the **License Section**:  
+
+---
+
+### 📜 Professional License  
+
+This project, **CareerSync AI**, is released under the **MIT License**, granting users the freedom to use, modify, distribute, and contribute to the code while maintaining attribution to the original developers. The MIT License ensures that this software remains open-source, promoting innovation and collaboration within the tech community. However, the software is provided "as is," without any warranty or liability from the developers. Any modifications or enhancements must acknowledge the original contributors. By using this software, you agree to the terms outlined in the **LICENSE** file.  
+
+**Copyright © The Elite Gang Hackathon, ITM University Gwalior.**

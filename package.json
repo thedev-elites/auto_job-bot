@@ -1,0 +1,26 @@
+{
+  "name": "internshala-job-portal",
+  "version": "1.0.0",
+  "description": "Job portal application with MongoDB integration",
+  "main": "index.js",
+  "scripts": {
+    "frontend": "cd Frontend && npm run dev",
+    "backend": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "install-all": "npm i && cd backend && npm i && cd ../Frontend && npm i",
+    "postinstall": "npm run install-all",
+    "check-ip": "cd scripts && .\\current-ip.bat",
+    "allow-all-ips": "powershell -File .\\scripts\\setup-mongo-anywhere.ps1",
+    "start-ip-daemon": "cd scripts && .\\start-auto-ip-daemon.bat",
+    "setup-startup": "cscript .\\scripts\\create-startup-shortcut.vbs",
+    "update-mongo-ip": "node .\\Scripts\\update-mongo-ip-new.js",
+    "auto-update-ip": "cd scripts && .\\start-auto-ip-update-daemon.bat",
+    "configure-auto-startup": "node .\\Scripts\\auto-startup-config.js",
+    "start-all": "concurrently \"npm run auto-update-ip\" \"npm run dev\"",
+    "start-all-windows": ".\\Scripts\\start-all.bat",
+    "setup": "node .\\Scripts\\automated-setup.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
